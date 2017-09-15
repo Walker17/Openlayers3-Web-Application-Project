@@ -4,7 +4,18 @@ Use Openlayers3 API to create web map and retrieve data from WMS layer in OGC Ge
 This is the code sample to retreive information from OGC Geodatabase WMS layers and to display it in popup window
 The code does not contain the links for WMS layers, but those layers can be added 
 
-The code is using Openlayers3 API
-The method of getting information from WMS layers is from https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=wms
-The method of dividing the layer is from https://openlayers.org/en/latest/examples/layer-group.html?q=layer+group
-The code for creating pop-up is retrieved from https://openlayers.org/en/latest/examples/popup.html?q=popup
+#Because the resources is limited, the WMS layer is retrieved from the code in 
+  https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=wms
+
+#The code is using Openlayers3 API
+#The method of getting information from WMS layers is from https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=wms
+#The method of dividing the layer is from https://openlayers.org/en/latest/examples/layer-group.html?q=layer+group
+#The code for creating pop-up is retrieved from https://openlayers.org/en/latest/examples/popup.html?q=popup
+
+#This map contains two layers - a base map and a wms layer
+#The drop down list can be used to select the layer that users want to identify 
+#e.g. when users choose layer1, the layer0 will not be identified 
+#     because in the demo code, the layer0 is the base map and it is not WMS layer, so this layer cannot be identified
+#     and the pop-up window will not show anything
+#     when the layer1 is selected, the popup window will show the information when users click on a point on the map 
+#The list at the bottom is clickable, and users can use that to set the visibility of the layers
