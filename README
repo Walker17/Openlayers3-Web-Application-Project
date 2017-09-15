@@ -6,6 +6,9 @@ The sample code does not contain the links for WMS layers, but those layers can 
 
 #Because the resources is limited, the WMS layer is retrieved from the code in 
   https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=wms
+  
+#If there are multiple features are overlaped on one point, those features can be all identified 
+#In the demo case, because there is no overlaped features, so only the popup only show the information about one feature
 
 #The code is using Openlayers3 API
 #The method of getting information from WMS layers is from https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=wms
